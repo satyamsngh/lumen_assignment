@@ -1,0 +1,88 @@
+
+<div class="contact-us">
+    <button class="open-button" onclick="openForm()">Contact Us</button>
+    <div class="form-popup" id="myForm">
+      <form class="form-container">
+        <h2>Contact Us</h2>
+        <label for="name"><b>Name</b></label>
+        <input type="text" placeholder="Enter Name" name="name" required>
+        <label for="email"><b>Email</b></label>
+        <input type="text" placeholder="Enter Email" name="email" required>
+        <label for="message"><b>Message</b></label>
+        <textarea placeholder="Enter Message" name="message" required></textarea>
+        <button type="submit" class="btn">Send</button>
+        <button type="button" class="btn cancel" onclick="closeForm()">Close</button>
+      </form>
+    </div>
+  </div>
+
+
+  .contact-us {
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  .open-button {
+    background-color: #00bfff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .form-popup {
+    display: none;
+    position: fixed;
+    bottom: 0;
+    right: 15px;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+    background-color: #ffffff;
+    width: 400px;
+  }
+  
+  .form-container {
+    max-width: 400px;
+    padding: 20px;
+  }
+  
+  .form-container h2 {
+    text-align: center;
+    margin-top: 0;
+  }
+  
+  .form-container input[type=text], .form-container textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+  }
+  
+  .form-container textarea {
+    height: 150px;
+  }
+  
+  .form-container .btn {
+    background-color: #00bfff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    padding: 10px 20px;
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  
+  .form-container .btn:hover {
+    background-color: #0080ff;
+  }
+  
+  .form-container .cancel {
+    background-color: #f44336;
+  }
+  
+  
